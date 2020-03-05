@@ -29,7 +29,7 @@ when{
     branch 'master'
   }
   steps {
-    echo 'run this stage - ony if the branch = master branch'
+    echo 'run this stage - ony if the branch is master branch'
   }
 }
 }
