@@ -32,19 +32,12 @@ when {
         return env.BRANCH_NAME = 'master';
         }
     }
-	}
+	
 	
 	echo"hi-sample1"
 	}
 	}
+
 }
-}
-
-
-
-
-
-
-
 }
 }
