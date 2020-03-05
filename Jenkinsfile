@@ -26,18 +26,12 @@ stage("Build")
 {
 steps
 {
-script{
-when {
-    expression {
-        return env.BRANCH_NAME = 'master';
-        }
-    }
-	
-	
-	echo"hi-sample1"
-	}
-	}
-
+when{
+    branch 'master'
+  }
+  steps {
+    echo 'run this stage - ony if the branch = master branch'
+  }
 }
 }
 }
