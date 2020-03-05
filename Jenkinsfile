@@ -30,7 +30,7 @@ when{
   }
   steps {
     echo 'run this stage - ony if the branch is master branch::"${Imagebranch}"'
-	echo "printenv $Imagebranch"
+	echo " $Imagebranch"
   }
 }
 stage("Deploy")
