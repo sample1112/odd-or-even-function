@@ -24,20 +24,23 @@ echo"hi-sample1"
 }
 stage("Build")
 {
-steps
-{
-script{
-when {
-    expression {
-        return env.BRANCH_NAME = 'master';
-        }
-    }
-	}
-	
-	echo"hi-sample1"
-	}
-	}
+
+when{
+    branch 'master'
+  }
+  steps {
+    echo 'run this stage - ony if the branch is master branch'
+  }
 }
+stage("Deploy")
+{
+
+when{
+    branch 'master'
+  }
+  steps {
+    echo 'Deploy stage - ony if the branch is master branch'
+  }
 }
 }
 }
