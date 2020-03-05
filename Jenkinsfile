@@ -29,7 +29,7 @@ when{
     branch 'master'
   }
   steps {
-    echo 'run this stage - ony if the branch is master branch::${Imagebranch}'
+    echo 'run this stage - ony if the branch is master branch::"${Imagebranch}"'
   }
 }
 stage("Deploy")
