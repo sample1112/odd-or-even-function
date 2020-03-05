@@ -24,8 +24,7 @@ echo"hi-sample1"
 }
 stage("Build")
 {
-steps
-{
+
 when{
     branch 'master'
   }
