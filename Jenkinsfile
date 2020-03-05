@@ -32,6 +32,15 @@ when{
     echo 'run this stage - ony if the branch is master branch'
   }
 }
+stage("Deploy")
+{
 
+when{
+    branch 'master'
+  }
+  steps {
+    echo 'Deploy stage - ony if the branch is master branch'
+  }
+}
 }
 }
