@@ -11,7 +11,7 @@ git 'Default'
 environment {
         
 		Branch_Name = "${env.BRANCH_NAME}"
-		
+	        Imagebranch = "${env.JOB_NAME}"
     }
 stages
 {
@@ -29,7 +29,7 @@ when{
     branch 'master'
   }
   steps {
-    echo 'run this stage - ony if the branch is master branch'
+    echo 'run this stage - ony if the branch is master branch::${Imagebranch}'
   }
 }
 stage("Deploy")
