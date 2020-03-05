@@ -32,6 +32,6 @@ when{
     echo 'run this stage - ony if the branch is master branch'
   }
 }
-}
+
 }
 }
